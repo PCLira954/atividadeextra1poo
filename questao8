@@ -1,0 +1,20 @@
+class Circulo{
+    raio: number = 0;
+
+    calcularArea():number{
+    return 3.14 * (this.raio * this.raio);
+    }
+
+    calcularCircuferencia(): Number{
+
+        return 2 * 3.14 * this.raio;
+    }
+}
+
+let circul0 : Circulo;
+circul0 = new Circulo;
+
+circul0.raio = 10;
+
+console.log(circul0.calcularArea())
+console.log(circul0.calcularCircuferencia())
